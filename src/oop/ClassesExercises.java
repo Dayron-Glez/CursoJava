@@ -31,12 +31,12 @@ public class ClassesExercises {
         worker.showData();
       // 9. Crea varios objetos Person y guárdalos en un ArrayList
         var people = new ArrayList<>(Arrays.asList(
-                new Person("Ana", 25),
-                new Person("Luis", 30),
-                new Person("Marta", 28)
+                new Person("Ana", 25, "561"),
+                new Person("Luis", 30, "64984"),
+                new Person("Marta", 28, "8494")
         ));
         for (Person person : people) {
-            System.out.println("Name: " + person.name + ", Age: " + person.age);
+            System.out.println("Name: " + person.name + ", Age: " + person.getAge());
         }
       // 10. Crea una clase Product y un método que aplique un descuento sobre su precio
         var product = new Product("Laptop", 1000);
